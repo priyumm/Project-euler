@@ -1,3 +1,5 @@
+//Problem 10
+//Find the sum of all the primes below two million.
 public class project10 {
 
 	public static void main(String[] args) {
@@ -22,3 +24,4 @@ public class project10 {
 		System.out.println(s);
 	}
 }
+//Output: 142913828922
