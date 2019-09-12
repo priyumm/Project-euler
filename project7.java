@@ -1,3 +1,5 @@
+//Problem 7
+//What is the 10 001st prime number?
 public class project7 {
 
 	public static void main(String[] args) {
@@ -23,3 +25,4 @@ public class project7 {
 	     }
 }
 }
+//Output: 104743
