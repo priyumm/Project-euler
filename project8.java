@@ -1,3 +1,5 @@
+//Problem 8
+//Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 public class project8 {
 
 	public static void main(String[] args) {
@@ -15,3 +17,4 @@ public class project8 {
     System.out.println(largestProduct);
 }
 }
+//Output: 23514624000
