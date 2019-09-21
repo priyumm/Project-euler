@@ -3,27 +3,25 @@
 that is evenly divisible by all of the numbers from 1 to 20?*/
 public class project5 {
 
-	public static void main(String[] args) {
-
-		int i=1,j,c=0,a=0;
-		
-		for(i=21;i<1000000000;i++)
-		{
-			for(j=1;j<=20;j++)
-			{
-				c=i%j;
-				if(c==0)
-					a++;
-			}
-			if(a==20)
-			{
-				System.out.println(i);
-				break;
-             }
-			a=0;
-		}
-           
-	}
-
+	static long gcd(long a, long b) 
+	{ 
+	   if(a%b != 0)  
+	      return gcd(b,a%b); 
+	   else 
+	      return b; 
+	} 
+	static long lcm(long n) 
+	{ 
+	    long ans = 1;     
+	    for (long i = 1; i <= n; i++) 
+	        ans = (ans * i)/(gcd(ans, i)); 
+	    return ans; 
+	} 
+	public static void main(String []args)  
+	{ 
+	    long n = 20; 
+	    System.out.println(lcm(n)); 
+	  
+	} 
 }
 //Output: 232792560
